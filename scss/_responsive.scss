@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+
+    .grid_container {
+        display: grid;
+        grid-template-columns: 0.2fr 2.6fr 0.2fr;
+        grid-template-rows: repeat(2, 0.01fr) 3.1fr 0.01fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". navbar_container ."
+            ". titulo_container ."
+            ". main_container ."
+            ". footer_container .";
+    }
+
+    .titulo_container {
+        grid-area: titulo_container;
+    }
+
+    .navbar_container {
+        grid-area: navbar_container;
+    }
+
+    .main_container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-template-rows: repeat(9, 1fr);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". producto11 ."
+            ". producto12 ."
+            ". producto13 ."
+            ". producto21 ."
+            ". producto22 ."
+            ". producto23 ."
+            ". producto31 ."
+            ". producto32 ."
+            ". producto33 .";
+        grid-area: main_container;
+    }
+
+    .producto11 {
+        grid-area: producto11;
+    }
+
+    .producto12 {
+        grid-area: producto12;
+    }
+
+    .producto13 {
+        grid-area: producto13;
+    }
+
+    .producto21 {
+        grid-area: producto21;
+    }
+
+    .producto22 {
+        grid-area: producto22;
+    }
+
+    .producto23 {
+        grid-area: producto23;
+    }
+
+    .producto31 {
+        grid-area: producto31;
+    }
+
+    .producto32 {
+        grid-area: producto32;
+    }
+
+    .producto33 {
+        grid-area: producto33;
+    }
+
+    .footer_container {
+        grid-area: footer_container;
+    }
+
+
+
+
+}

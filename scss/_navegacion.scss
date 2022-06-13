@@ -1,0 +1,62 @@
+@import'./colores';
+/*navegacion*/
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+
+    color: $colorLetras;
+    font-size: large;
+    font-weight: 800;
+    backdrop-filter: blur(100px);
+    
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar {
+    backdrop-filter: blur(100px);
+}
+
+@media (min-width: 992px) {
+
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: end;
+    }
+}
+
+.nav-link {
+    transition: none;
+    color: $colorLinks;
+    font-weight: 800;
+    
+
+    &:hover {
+        text-shadow: 1px 1px 1px $colorLinksShadow;
+        color: $colorLinksHover;
+
+    }
+}
+
+#logo {
+    animation-duration: 1s;
+    animation-name: latido;
+    animation-iteration-count: infinite;
+}
+
+@keyframes latido {
+    from {
+        transform: none;
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    to {
+        transform: none;
+    }
+
+}

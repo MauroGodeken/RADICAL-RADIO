@@ -1,0 +1,41 @@
+@import'./colores';
+
+@mixin linkHover {
+    text-shadow: 1px 1px 1px $colorLinksShadow;
+    color: $colorLinksHover;
+
+}
+
+/*Suscripción*/
+#suscripcion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 10px;
+    border: 1px solid rgb(14, 14, 14);
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+
+    a {
+        @include fontStyle;
+        transition: 1s;
+        text-decoration: none;
+
+
+        ;
+
+        &:hover {
+
+            @include linkHover;
+            text-decoration: overline;
+            font-weight: bold;
+            transform: scale(1.2);
+        }
+    }
+}
+

@@ -1,0 +1,77 @@
+@import'./colores';
+/*formulario*/
+
+.form__imagen {
+
+
+    flex: 2;
+    display: flex;
+    padding: 10px;
+    min-width: 200px;
+    max-width: 400px;
+    order: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+        width: 200px;
+        width: 60%;
+        padding: 10px;
+        margin: auto;
+        border-radius: 50%;
+        background-color: rgb(107, 107, 107);
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+
+    }
+}
+
+.form__input {
+    width: 50%;
+    padding: 8px;
+    margin: 10px;
+    border-top: 3px rgb(92, 4, 4) solid;
+    background: rgb(182, 179, 179);
+    box-shadow: 5px 5px $colorBoxShadow;
+    flex-wrap: wrap;
+
+    &:focus {
+        background-color: $colorBackgroundFocus;
+        border-top: 3px rgb(0, 0, 0) solid;
+    }
+}
+
+.form__comentarios {
+
+
+    width: 50%;
+    background: rgb(182, 179, 179);
+    border-top: 3px rgb(92, 4, 4) solid;
+    box-shadow: 5px 5px $colorBoxShadow ;
+    resize: none;
+    flex-wrap: wrap;
+    margin: 10px;
+
+
+    &:focus {
+        background-color: $colorBackgroundFocus;
+        border-top: 5px rgb(0, 0, 0) solid;
+    }
+}
+
+.form__select {
+
+    width: 50%;
+    margin: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    background: rgb(185, 184, 184);
+    border-top: 3px rgb(92, 4, 4) solid;
+    flex-wrap: wrap;
+
+
+
+    &:focus {
+        background-color: $colorBackgroundFocus;
+        border-top: 3px rgb(0, 0, 0) solid;
+    }
+}
