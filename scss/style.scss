@@ -106,7 +106,7 @@ a.instagram {
     justify-content: center;
 }
 .h2__nosotros{
-    font-size: 5rem;
+    font-size: 5vw;
 }
 
 ol li{
@@ -139,5 +139,17 @@ ol li{
 }
 
 h3{
+    padding: 20px;
+}
+
+#cantante{
+    display: flex;
+    justify-content: center;
+}
+
+.esTiempo{
+    padding: 20px;
+}
+.delLadoOscuro{
     padding: 20px;
 }

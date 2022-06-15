@@ -284,4 +284,15 @@
         }
 
     }
+
+}
+
+.producto__imagen {
+
+    filter: grayscale(100%);
+    transition: filter 0.4s ease-in;
+
+    &:hover {
+        filter: none;
+    }
 }

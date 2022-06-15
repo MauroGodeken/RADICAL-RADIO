@@ -1,11 +1,12 @@
 @import'./colores';
 
-@mixin fontStyle{
+@mixin fontStyle {
     font-family: 'Roboto', sans-serif;
     color: $colorLetras;
     text-align: center;
 
 }
+
 #titulo {
     display: flex;
     justify-content: center;
@@ -26,22 +27,54 @@
 
 }
 
+h2::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+h2:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+h2::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: $colorBefore;
+    z-index: -1;
+    transition: transform .3s ease;
+    
+  }
+
+
+
 h2,
 h3,
 h4,
 h5 {
     @include fontStyle();
+    position: relative;    
 
     &:hover {
-        text-shadow: 1px 1px 1px $colorTextShadow ;
+        text-shadow: $colorTextShadow ;
     }
 }
 
-h3{
+h3 {
     font-size: 1rem;
 }
 
-p.nombreCancion{
-    justify-items: center;
-    
+.nombreCancion {
+    @include fontStyle();
+    margin-top: 50px;
+    padding: 20px;
+
+
+}
+
+.tituloDiscografia {
+    @include fontStyle();
+    font-size: 3REM;
 }
