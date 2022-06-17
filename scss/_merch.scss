@@ -265,9 +265,7 @@
 
         color: rgb(241, 231, 185);
 
-        &:hover {
-            text-shadow: 5px 5px 20px $colorTextShadow;
-        }
+
     }
 
 
@@ -275,10 +273,11 @@
         text-decoration: none;
         color: $colorLetras;
         font-weight: bold;
+        
 
         &:hover {
-            text-shadow: 5px 5px 10px $colorLinksShadow;
-            color: $colorLetras;
+
+            color: $colorLinksHover;
             text-decoration: solid;
 
         }
@@ -289,10 +288,13 @@
 
 .producto__imagen {
 
-    filter: grayscale(100%);
+    filter: sepia(50%);
     transition: filter 0.4s ease-in;
 
     &:hover {
         filter: none;
     }
+}
+.produto__footer {
+    padding: 10px;
 }

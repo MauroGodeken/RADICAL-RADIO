@@ -20,7 +20,8 @@
   justify-content: end; }
 
 .navbar {
-  backdrop-filter: blur(100px); }
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.9); }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -31,7 +32,6 @@
   color: #fffccb;
   font-weight: 800; }
   .nav-link:hover {
-    text-shadow: 1px 1px 1px rgba(255, 72, 72, 0.5);
     color: #8d0000; }
 
 #logo {
@@ -114,109 +114,117 @@ h3 {
   text-align: center;
   font-size: 3REM; }
 
+.producto__titulo p {
+  padding: 5px;
+  text-decoration: underline; }
+
+.h2__videoclips {
+  padding: 10px;
+  margin-bottom: 50px; }
+
 /*videos index*/
 .video1 {
   display: flex;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  padding-bottom: 300px;
+  height: 20;
   overflow: hidden; }
   .video1 iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 15;
+    left: 15;
+    max-width: 100%;
     height: 100%; }
 
 .video2 {
   display: flex;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  padding-bottom: 300px;
+  height: 20;
   overflow: hidden; }
   .video2 iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 15;
+    left: 15;
+    max-width: 100%;
     height: 100%; }
 
 .video3 {
   display: flex;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  padding-bottom: 300px;
+  height: 20;
   overflow: hidden; }
   .video3 iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 15;
+    left: 15;
+    max-width: 100%;
     height: 100%; }
 
 .video4 {
   display: flex;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  padding-bottom: 300px;
+  height: 20;
   overflow: hidden; }
   .video4 iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 15;
+    left: 15;
+    max-width: 100%;
     height: 100%; }
 
 .video5 {
   display: flex;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  padding-bottom: 300px;
+  height: 20;
   overflow: hidden; }
   .video5 iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 15;
+    left: 15;
+    max-width: 100%;
     height: 100%; }
 
 .video6 {
   display: flex;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  padding-bottom: 300px;
+  height: 20;
   overflow: hidden; }
   .video6 iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 15;
+    left: 15;
+    max-width: 100%;
     height: 100%; }
 
 .video7 {
   display: flex;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  padding-bottom: 300px;
+  height: 20;
   overflow: hidden; }
   .video7 iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 15;
+    left: 15;
+    max-width: 100%;
     height: 100%; }
 
 .video8 {
   display: flex;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  padding-bottom: 300px;
+  height: 20;
   overflow: hidden; }
   .video8 iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 15;
+    left: 15;
+    max-width: 100%;
     height: 100%; }
 
 /*Suscripción*/
@@ -408,22 +416,22 @@ h3 {
   .main_container p {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
     color: #f1e7b9; }
-    .main_container p:hover {
-      text-shadow: 5px 5px 20px #ff5858; }
   .main_container a {
     text-decoration: none;
     color: #ffffdc;
     font-weight: bold; }
     .main_container a:hover {
-      text-shadow: 5px 5px 10px rgba(255, 72, 72, 0.5);
-      color: #ffffdc;
+      color: #8d0000;
       text-decoration: solid; }
 
 .producto__imagen {
-  filter: grayscale(100%);
+  filter: sepia(50%);
   transition: filter 0.4s ease-in; }
   .producto__imagen:hover {
     filter: none; }
+
+.produto__footer {
+  padding: 10px; }
 
 /*formulario*/
 .form__imagen {
