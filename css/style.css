@@ -51,17 +51,15 @@
   display: flex;
   justify-content: center;
   font-size: 7vw;
+  max-width: 1400px;
   color: #ffffdc;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  background: linear-gradient(to left, black, #707070);
   border-bottom: 10px #161616 dashed;
   border-top: 10px #161616 dashed;
   transition: 1s;
   margin-top: 10px;
   flex-wrap: wrap; }
-  #titulo:hover {
-    text-shadow: 5px 5px 10px #ff5858; }
 
 h2::before {
   transform: scaleX(0);
@@ -435,28 +433,21 @@ h3 {
 
 /*formulario*/
 .form__imagen {
-  flex: 2;
-  display: flex;
-  padding: 10px;
   min-width: 200px;
   max-width: 400px;
   order: 2;
-  flex-wrap: wrap;
-  justify-content: center; }
+  margin: 0px auto; }
   .form__imagen img {
     width: 200px;
     width: 60%;
-    padding: 10px;
-    margin: auto;
+    margin: 10px auto;
     border-radius: 50%;
-    background-color: #6b6b6b;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap; }
+    background-color: black;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1); }
 
 .form__input {
-  width: 50%;
-  padding: 8px;
-  margin: 10px;
+  min-width: 25%;
+  max-width: 600px;
   border-top: 3px #5c0404 solid;
   background: #b6b3b3;
   box-shadow: 5px 5px black;
@@ -466,7 +457,8 @@ h3 {
     border-top: 3px black solid; }
 
 .form__comentarios {
-  width: 50%;
+  min-width: 30%;
+  max-width: 600px;
   background: #b6b3b3;
   border-top: 3px #5c0404 solid;
   box-shadow: 5px 5px black;
@@ -478,7 +470,8 @@ h3 {
     border-top: 5px black solid; }
 
 .form__select {
-  width: 50%;
+  min-width: 25%;
+  max-width: 600px;
   margin: 10px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
   background: #b9b8b8;
@@ -487,6 +480,20 @@ h3 {
   .form__select:focus {
     background-color: #fffadb;
     border-top: 3px black solid; }
+
+label.form-label {
+  color: #ffffdc;
+  text-align: center; }
+
+.form__email,
+.form__text-area,
+.form__nombre,
+.boton__enviar {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 body {
   background-color: black; }

@@ -11,19 +11,16 @@
     display: flex;
     justify-content: center;
     font-size: 7vw;
+    max-width: 1400px;
     color: $colorLetras;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background: linear-gradient(to left, rgb(0, 0, 0), rgb(112, 112, 112));
+    
     border-bottom: 10px rgb(22, 22, 22) dashed;
     border-top: 10px rgb(22, 22, 22) dashed;
     transition: 1s;
     margin-top: 10px;
-    flex-wrap: wrap;
-
-    &:hover {
-        text-shadow: 5px 5px 10px $colorTextShadow;
-    }
+    flex-wrap: wrap;   
 
 }
 

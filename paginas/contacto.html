@@ -22,18 +22,18 @@
     <!--Navbar-->
     <header class=" sticky-top">
         <nav class="navbar navbar-expand-lg sticky-lg-top navbar-light"
-          style="backdrop-filter: blur(200px); background-color:rgba(0, 0, 0, 0.9) ; ">
-          <div class="container-fluid">
-            <a id="logo" class="navbar-brand" href="../index.html"><img src="../Imagenes/corazon-logo.png" width="64"
-                alt="logoradical">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="../Imagenes/menu-hamburguesa.png" alt="">
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
+            style="backdrop-filter: blur(200px); background-color:rgba(0, 0, 0, 0.9) ; ">
+            <div class="container-fluid">
+                <a id="logo" class="navbar-brand" href="../index.html"><img src="../Imagenes/corazon-logo.png"
+                        width="64" alt="logoradical">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../Imagenes/menu-hamburguesa.png" alt="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
@@ -55,34 +55,34 @@
         <h1 id="titulo">RADICAL RADIO</h1>
 
         <!--Empieza el formulario-->
-        <form class="formulario">
-            <div class="form__imagen">
-                <img src="../Imagenes/imagen-contacto.png" width="150" height="150" alt="">
-            </div>
+        <section class="container">
+            <form class="formulario">
+                <div class="form__imagen d-flex">
+                    <img src="../Imagenes/imagen-contacto.png" width="150" height="150" alt="">
+                </div>
 
-            <div class="mt-5">
+                <div class="mt-5 mb-5 form__nombre">
 
-                <label for="exampleFormControlInput1" class="form-label">Nombre y apellido:</label>
-                <input type="email" class="form-control form__input" id="exampleFormControlInput1"
-                    placeholder="Poné tu nombre">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre y apellido:</label>
+                    <input type="email" class="form-control form__input" id="exampleFormControlInput1"
+                        placeholder="Poné tu nombre">
+                </div>
+                <div class="mb-5  form__email">
+                    <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                    <input type="email" class="form-control form__input" id="exampleFormControlInput1"
+                        placeholder="Poné tu E-mail @">
+                </div>
+                                
+                <div class="mb-5  form__text-area">
+                    <label for="exampleFormControlTextarea1" class="form-label">Sugerencias</label>
+                    <textarea class="form-control form__comentarios" id="exampleFormControlTextarea1"
+                        rows="3"></textarea>
+                </div>
+                <div class="boton__enviar">
+                <button type="submit" id="Submit" class="btn btn-secondary p-2 m-3 d-flex ">Enviar</button>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email:</label>
-                <input type="email" class="form-control form__input" id="exampleFormControlInput1"
-                    placeholder="Poné tu E-mail @">
-            </div>
-            <select class="form-select form__select" aria-label="Default select example">
-                <option selected>Sexo</option>
-                <option value="1">Hombre</option>
-                <option value="2">Mujer</option>
-                <option value="2">Otro</option>
-            </select>
-            <div class="mb-5">
-                <label for="exampleFormControlTextarea1" class="form-label">Sugerencias</label>
-                <textarea class="form-control form__comentarios" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" id="Submit" class="btn btn-secondary p-2 m-3">Enviar</button>
-        </form>
+            </form>
+        </section>
     </main>
 
     <!--footer-->
