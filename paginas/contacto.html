@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página oficial de RADICAL RADIO. Entrá para ponerte en contacto con nosotros.">
     <title>RADICAL RADIO</title>
+    <link rel="icon" type="image/x-icon" href="/Imagenes/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -13,13 +15,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Condensed:wght@700&family=Rubik+Glitch&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
+    <!---------------------Navegacion---------------------->
 
-    <!--Navbar-->
     <header class=" sticky-top">
         <nav class="navbar navbar-expand-lg sticky-lg-top navbar-light"
             style="backdrop-filter: blur(200px); background-color:rgba(0, 0, 0, 0.9) ; ">
@@ -50,11 +52,13 @@
             </div>
         </nav>
     </header>
-    <!--Titulo-->
+
+    <!---------------------Título---------------------->
     <main class="container">
         <h1 id="titulo">RADICAL RADIO</h1>
 
-        <!--Empieza el formulario-->
+        <!---------------------Formulario---------------------->
+
         <section class="container">
             <form class="formulario">
                 <div class="form__imagen d-flex">
@@ -67,33 +71,38 @@
                     <input type="email" class="form-control form__input" id="exampleFormControlInput1"
                         placeholder="Poné tu nombre">
                 </div>
+
                 <div class="mb-5  form__email">
                     <label for="exampleFormControlInput1" class="form-label">Email:</label>
                     <input type="email" class="form-control form__input" id="exampleFormControlInput1"
                         placeholder="Poné tu E-mail @">
                 </div>
-                                
+
                 <div class="mb-5  form__text-area">
                     <label for="exampleFormControlTextarea1" class="form-label">Sugerencias</label>
                     <textarea class="form-control form__comentarios" id="exampleFormControlTextarea1"
                         rows="3"></textarea>
                 </div>
+
                 <div class="boton__enviar">
-                <button type="submit" id="Submit" class="btn btn-secondary p-2 m-3 d-flex ">Enviar</button>
-            </div>
+                    <button type="submit" id="Submit" class="btn btn-secondary p-2 m-3 d-flex ">Enviar</button>
+                </div>
+
             </form>
         </section>
     </main>
 
-    <!--footer-->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container flex-wrap">
+<!---------------------Footer---------------------->
+
+    <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container flex-wrap">
         <div class="col-md-4 d-flex align-items-center">
             <a href="" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24">
                     <use xlink:href="#bootstrap"></use>
                 </svg>
             </a>
-            
+
             <span class="mb-3 mb-md-0 text-muted">Todos los derechos reservados</span>
         </div>
 
@@ -127,7 +136,6 @@
                 </a>
             </li>
         </ul>
-
     </footer>
 
 
