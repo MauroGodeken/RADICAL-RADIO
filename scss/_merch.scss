@@ -275,6 +275,8 @@
         color: $colorLetras;
         font-weight: bold;
         
+        
+        
 
         &:hover {
 
@@ -296,9 +298,14 @@
 
     &:hover {
         filter: none;
-        transform: scale(1.01);
+        transform: scale(1.5);
     }
 }
 .produto__footer {
     padding: 10px;
+}
+
+card p{
+    margin-top: 1em;
+    z-index: -1;
 }

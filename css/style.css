@@ -234,7 +234,7 @@ h3 {
   border: 1px solid #0e0e0e;
   padding: 20px;
   background-color: black;
-  color: red;
+  color: #8d0000;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 50px; }
@@ -242,14 +242,11 @@ h3 {
     font-family: 'Roboto', sans-serif;
     color: #ffffdc;
     text-align: center;
-    transition: 1s;
+    transition: 2s;
     text-decoration: none; }
     #suscripcion a:hover {
-      text-shadow: 1px 1px 1px rgba(255, 72, 72, 0.5);
       color: #8d0000;
-      text-decoration: overline;
-      font-weight: bold;
-      transform: scale(1.2); }
+      text-decoration: overline; }
 
 /*pagina de merch*/
 .grid_container {
@@ -429,10 +426,14 @@ h3 {
   transition: 1s; }
   .producto__imagen:hover {
     filter: none;
-    transform: scale(1.01); }
+    transform: scale(1.5); }
 
 .produto__footer {
   padding: 10px; }
+
+card p {
+  margin-top: 1em;
+  z-index: -1; }
 
 /*formulario*/
 .form__imagen {
@@ -572,3 +573,6 @@ h3 {
 
 .nosotros__container {
   margin-left: 1.2em; }
+
+.playlist:last-child {
+  margin-bottom: 5em; }
