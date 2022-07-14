@@ -13,15 +13,18 @@
   color: #ffffdc;
   font-size: large;
   font-weight: 800;
-  backdrop-filter: blur(100px); }
+  backdrop-filter: blur(100px); 
+}
 
 .navbar-collapse {
   display: flex;
-  justify-content: end; }
+  justify-content: end; 
+}
 
 .navbar {
   backdrop-filter: blur(10px);
-  background: rgba(0, 0, 0, 0.9); }
+  background: rgba(0, 0, 0, 0.9); 
+}
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -30,9 +33,11 @@
 .nav-link {
   transition: none;
   color: #fffccb;
-  font-weight: 800; }
+  font-weight: 800; 
+}
   .nav-link:hover {
-    color: #8d0000; }
+    color: #8d0000; 
+  }
 
 #logo {
   animation-duration: 1s;
@@ -41,11 +46,14 @@
 
 @keyframes latido {
   from {
-    transform: none; }
+    transform: none; 
+  }
   50% {
-    transform: scale(1.3); }
+    transform: scale(1.3);
+   }
   to {
-    transform: none; } }
+    transform: none; } 
+  }
 
 #titulo {
   display: flex;
@@ -255,7 +263,10 @@ h3 {
   grid-template-rows: repeat(2, 0.3fr) 3.1fr 0.3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: ". navbar_container ." ". titulo_container ." ". main_container ." ". footer_container ."; }
+  grid-template-areas: ". navbar_container ."
+ ". titulo_container ."
+ ". main_container ."
+ ". footer_container ."; }
 
 .titulo_container {
   grid-area: titulo_container; }
@@ -270,7 +281,9 @@ h3 {
   grid-template-rows: repeat(3, 1fr);
   gap: 4px 4px;
   grid-auto-flow: row;
-  grid-template-areas: "producto11 producto12 producto13" "producto21 producto22 producto23" "producto31 producto32 producto33";
+  grid-template-areas: "producto11 producto12 producto13"
+ "producto21 producto22 producto23"
+ "producto31 producto32 producto33";
   grid-area: main_container; }
 
 .producto11 {
@@ -279,7 +292,9 @@ h3 {
   grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "producto__titulo" "producto__imagen" "producto__footer";
+  grid-template-areas: "producto__titulo"
+ "producto__imagen"
+ "producto__footer";
   grid-area: producto11; }
 
 .producto__titulo {
@@ -297,7 +312,9 @@ h3 {
   grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "producto__titulo" "producto__imagen" "producto__footer";
+  grid-template-areas: "producto__titulo"
+ "producto__imagen"
+ "producto__footer";
   grid-area: producto12; }
 
 .producto13 {
@@ -306,7 +323,9 @@ h3 {
   grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "producto__titulo" "producto__imagen" "producto__footer";
+  grid-template-areas: "producto__titulo"
+ "producto__imagen"
+ "producto__footer";
   grid-area: producto13; }
 
 .producto21 {
@@ -315,7 +334,9 @@ h3 {
   grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "producto__titulo" "producto__imagen" "producto__footer";
+  grid-template-areas: "producto__titulo"
+ "producto__imagen"
+ "producto__footer";
   grid-area: producto21; }
 
 .producto22 {
@@ -324,7 +345,9 @@ h3 {
   grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "producto__titulo" "producto__imagen" "producto__footer";
+  grid-template-areas: "producto__titulo"
+ "producto__imagen"
+ "producto__footer";
   grid-area: producto22; }
 
 .producto23 {
@@ -333,7 +356,9 @@ h3 {
   grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "producto__titulo" "producto__imagen" "producto__footer";
+  grid-template-areas: "producto__titulo"
+ "producto__imagen"
+ "producto__footer";
   grid-area: producto23; }
 
 .producto31 {
@@ -342,7 +367,9 @@ h3 {
   grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "producto__titulo" "producto__imagen" "producto__footer";
+  grid-template-areas: "producto__titulo"
+ "producto__imagen"
+ "producto__footer";
   grid-area: producto31; }
 
 .producto32 {
@@ -351,7 +378,9 @@ h3 {
   grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "producto__titulo" "producto__imagen" "producto__footer";
+  grid-template-areas: "producto__titulo"
+ "producto__imagen"
+ "producto__footer";
   grid-area: producto32; }
 
 .producto33 {
@@ -360,7 +389,9 @@ h3 {
   grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "producto__titulo" "producto__imagen" "producto__footer";
+  grid-template-areas: "producto__titulo"
+ "producto__imagen"
+ "producto__footer";
   grid-area: producto33; }
 
 .footer_container {
@@ -373,7 +404,10 @@ h3 {
     grid-template-rows: repeat(2, 0.01fr) 3.1fr 0.01fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: ". navbar_container ." ". titulo_container ." ". main_container ." ". footer_container ."; }
+    grid-template-areas: ". navbar_container ."
+ ". titulo_container ."
+ ". main_container ."
+ ". footer_container ."; }
   .titulo_container {
     grid-area: titulo_container; }
   .navbar_container {
@@ -384,7 +418,15 @@ h3 {
     grid-template-rows: repeat(9, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: ". producto11 ." ". producto12 ." ". producto13 ." ". producto21 ." ". producto22 ." ". producto23 ." ". producto31 ." ". producto32 ." ". producto33 .";
+    grid-template-areas: ". producto11 ."
+ ". producto12 ."
+ ". producto13 ."
+ ". producto21 ."
+ ". producto22 ."
+ ". producto23 ."
+ ". producto31 ."
+ ". producto32 ."
+ ". producto33 .";
     grid-area: main_container; }
   .producto11 {
     grid-area: producto11; }
@@ -576,3 +618,22 @@ h3 {
 
 .playlist:last-child {
   margin-bottom: 5em; }
+
+
+  /* .spinner{
+    border: 4px solid rgba(0, 0, 0, .1);
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border-left-color: red;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin{
+    0%{
+      transform: rotate(0deg)
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  } */
+  
