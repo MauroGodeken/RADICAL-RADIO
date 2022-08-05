@@ -5,7 +5,7 @@ function Producto(nombre, precio, stock, imagen) {
     this.stock = stock;
     this.imagen = imagen;
 
-    /* imagen.querySelector = (".producto__imagen") */
+    /* imagen.querySelector = (".producto__imagen")  */
 }
 const pinA = new Producto("Pin de rock", 200, 20,)
 const pinB = new Producto("Pin de rock devil", 200, 20)
@@ -24,27 +24,28 @@ let listaDeProductos = [gorraA, gorraB, gorraC, pinA, pinB, pinC, remeraA, remer
 let listaTotalProductos = listaDeProductos.map((producto) => producto.nombre)
 
 for (const producto of listaDeProductos) {
-    let tarjeta = document.createElement("card")
-
-    tarjeta.innerHTML +=
     
-        `<h2> ${producto.nombre}</h2>
-         <strong> El Precio es de : ${producto.precio}</strong>
-         <p> Nuestro stock disponible es de : ${producto.stock}</p>
+    let tarjeta = document.createElement("div")
+    tarjeta.className = "card-container-JS"
+    tarjeta.innerHTML +=
+
+        `
+        <card>
+            <h2> ${producto.nombre}</h2>
+            <p> El Precio es de : <strong>${producto.precio}</strong></p>
+            <p> Nuestro stock disponible es de : <strong>${producto.stock}</strong></p>
+            <button> Comprar </button>
+        <card>
         `
 
-
-
-
-
-    /* let nuevaCardProducto = document.getElementById("nuevasCardsJS")
-    nuevaCardProducto.append("card")*/
     document.body.append(tarjeta)
 }
 
 
 
-let descripcionProducto = prompt("Ingrese que cantidad de compras desea hacer:")
+
+let CantidadCompra = getElementById("inputCompras" )
+/* prompt("Ingrese que cantidad de compras desea hacer:") */
 
 let cantidadTotal = 0
 let precioTotal = 0
@@ -69,7 +70,7 @@ function calculoStock(cantidad, stock, precio) {
 
 
 
-for (let i = 0; i < descripcionProducto; i++) {
+for (let i = 0; i < CantidadCompra; i++) {
 
     let compraProducto = prompt(`Ingrese el nombre del producto que quiere comprar: \n RECUERDE SOLO PONER EL NOMBRE DEL ARTICULO \n EJ:(gorra) \n ${listaTotalProductos.join("\n -")}`)
     let cantidadProducto = parseInt(prompt("Ingrese la cantidad del producto que quiere comprar:"))
@@ -87,4 +88,26 @@ for (let i = 0; i < descripcionProducto; i++) {
     else {
         alert("Producto invalido")
     }
+}
+
+
+let formulario = document.getElementById("formulario")
+
+
+formulario.addEventListener("submit", validarFormulario)
+
+function validarFormulario(e) {
+
+    e.preventDefault()
+    let arrayform = e.target
+
+    let mensajeJS = document.getElementById("mensajeJS")
+    mensajeJS.className = "h3-JS"
+
+    mensajeJS.innerHTML = ""
+
+    mensajeJS.innerText = `Gracias por su feedback y la suscripción ${arrayform[0].value}`
+
+    mensajeJS.append(mensajeJS)
+
 }
